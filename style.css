@@ -183,32 +183,18 @@ button { font: inherit; color: inherit; }
   .js .tile img.is-in { opacity: 1; }
 }
 
-.new {
-  position: absolute;
-  top: 6px; left: 6px;
-  background: #fff;
-  color: var(--pink);
-  font-size: 9px;
-  font-weight: 600;
-  padding: 3px 7px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-  pointer-events: none;
-}
-.new--inline { position: static; display: inline-block; margin-right: 4px; }
 
 /* ---------- footer ---------- */
 .foot {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 16px 40px;
   padding: 72px var(--pad) 48px;
   font-size: 12px;
   line-height: 1.6;
   color: var(--muted);
 }
-.foot p:first-child { max-width: 72ch; }
 .to-top { text-decoration: none; color: var(--text); }
 .to-top:hover { text-decoration: underline; }
 

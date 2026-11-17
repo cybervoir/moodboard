@@ -1,5 +1,7 @@
 # moodboard — cybervoir
 
+Live at **https://cybervoir.github.io/moodboard/** (repository: https://github.com/cybervoir/moodboard).
+
 A one-page static site built from the Figma frame **"moodboard — cybervoir"**
 (https://www.figma.com/design/EmbQlTi5s0ypUnuJXEQUP7). Plain HTML + CSS + a little JavaScript, no build step.
 
@@ -12,7 +14,7 @@ assets/og.jpg  preview picture shown when the link is shared
 ```
 
 Image names follow the board: `t1_…` cute with teeth, `t2_…` lotus os, `t3_…` corp nature,
-`t4_…` divine machinery, `t5_…` found words, `t6_…` sakha code.
+`t4_…` divine machinery, `t5_…` found words, `t6_…` sakha // turkic code.
 
 ## Preview on your Mac
 
@@ -28,19 +30,13 @@ Then open http://localhost:8770
    480 px wide copy named `…-480.webp`.
 2. In `index.html`, copy one `<figure class="tile">` block inside the theme you want, change the
    two file names, the `width`/`height` of the small copy, and the `alt` text (a short description).
-3. For a new find, keep `<span class="new">✦ new</span>` in the block; otherwise delete it.
 
-## Publish free on GitHub Pages
+## Update the live site
 
-1. On github.com create a **public** repository, for example `stable-moon`.
-   The address will be `https://<your-username>.github.io/stable-moon/`.
-2. Choose **Add file → Upload files** and drag in `index.html`, `style.css`, `main.js`,
-   `README.md` and the whole `assets` folder. Click **Commit changes**.
-3. Open **Settings → Pages**. Under "Build and deployment" pick **Deploy from a branch**,
-   branch **main**, folder **/ (root)**, then **Save**.
-4. Wait a minute or two and open the address shown on that page.
+1. Open https://github.com/cybervoir/moodboard and choose **Add file → Upload files**.
+2. Drag in the changed files. Files inside `assets/img` go in by dragging an `assets` folder that
+   contains an `img` folder with them, so they land in the right place.
+3. Click **Commit changes**. The site updates in a minute or two.
 
-To update later, upload the changed file again. The whole site is about 7 MB.
-
-Note: most images were collected from Pinterest and belong to their creators. The page
-says so in its footer; keep that line if you publish it.
+GitHub's website takes at most 100 files per upload and 25 MB per file, so upload big batches
+in parts. A file with the same name replaces the old one.

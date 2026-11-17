@@ -24,7 +24,7 @@ if (viewer && typeof viewer.showModal === "function") {
     const theme = link.closest(".theme").querySelector("h2").textContent.replace(/^\d+/, "").trim();
     vImg.src = link.href;
     vImg.alt = thumb.alt;
-    vTheme.textContent = theme + (link.dataset.new === "true" ? " · ✦ new find" : "");
+    vTheme.textContent = theme;
     vAlt.textContent = thumb.alt;
   };
 
